@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pearl Gasoline Industry</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="icon">
+                    <img src="./Pearl Logo.webp" alt="PGI Logo" class="company-logo">
+                    <h1 class="company-name">PEARL</h1>
+                </div>
+                <div class="nav-right">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="consumption.html">HOME</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="statistic.html">STATISTICS</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-container">
+                        <button class="search-toggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="search">
+                            <input class="search-input" type="search" placeholder="Search gasoline product">
+                            <button class="btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>About Pearl Gasoline<br><span>Fueling Progress, Empowering Communities</span></h1>
+        </div>
+
+        <section class="about-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card mission">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To deliver reliable and sustainable energy solutions that empower Ugandan communities, drive economic development, and prioritize environmental stewardship.</p>
+                    </div>
+                    <div class="info-card vision">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To be Uganda's most trusted and innovative energy partner, contributing to a brighter and more sustainable future.</p>
+                    </div>
+                    <div class="info-card location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>P.O BOX 9982<br>Bugolobi Street<br>Kampala Uganda</p>
+                    </div>
+                    <div class="info-card inception">
+                        <i class="fas fa-history"></i>
+                        <h3>Inception</h3>
+                        <p>Established in the year 2000<br>Founded by a team of bio chemists and business professionals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Pearl Gasoline Industry is Uganda's leading fuel distributor, committed to quality service and environmental sustainability.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="consumption.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="statistic.html">Statistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
+                        <li><i class="fas fa-phone"></i> +256 XXX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> info@pearlgasoline.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pearl Gasoline Industry. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <span>Designed by GROUP X BBC</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const searchToggle = document.querySelector('.search-toggle');
+            const menu = document.querySelector('.menu');
+            const search = document.querySelector('.search');
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.background = 'rgba(27, 61, 109, 0.98)';
+                    navbar.style.padding = '0.5rem 5%';
+                } else {
+                    navbar.style.background = 'rgba(27, 61, 109, 0.95)';
+                    navbar.style.padding = '1rem 5%';
+                }
+            });
+
+            // Menu toggle
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+                search.classList.remove('active');
+            });
+
+            // Search toggle
+            searchToggle.addEventListener('click', () => {
+                search.classList.toggle('active');
+                menu.classList.remove('active');
+            });
+
+            // Close menu and search when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-right')) {
+                    menu.classList.remove('active');
+                    search.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

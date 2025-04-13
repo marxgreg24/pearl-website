@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEARL GASOLINE INDUSTRY INC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="icon">
+                    <img src="./Pearl Logo.webp" alt="PGI Logo" class="company-logo">
+                    <h1 class="company-name">PEARL</h1>
+                </div>
+                <div class="nav-right">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="statistic.html">STATISTICS</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-container">
+                        <button class="search-toggle">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="search">
+                            <input class="search-input" type="search" name="" placeholder="Search gasoline product">
+                            <button class="btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <h1>Pearl Gasoline Industry <br><span>Comprehensive Sale and Distribution</span> <br>Reduce, Reuse & Recycle</h1>
+            <button class="ctn"><a href="contact.html">APPLY NOW</a></button>
+        </div>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>About Pearl Gasoline</h2>
+                <p class="about-text">
+                    Pearl Gasoline Inc is a leading energy company located in the bustling city of Kampala, Uganda. 
+                    Specializing in the supply and distribution of high-quality petroleum products, the company has earned a reputation for reliability and excellence. 
+                    With a strong focus on innovation and sustainability, Pearl Gasoline Inc is committed to meeting the energy needs of both urban and rural communities. 
+                    Their state-of-the-art facilities and dedicated workforce ensure efficient service delivery and customer satisfaction. 
+                    As a key player in Uganda's energy sector, the company continues to drive economic growth and development across the region. 
+                    Pearl Gasoline Inc also prioritizes environmental responsibility through initiatives that promote cleaner energy solutions. 
+                    Their mission is to power progress and improve lives while contributing to a sustainable future.
+                </p>
+                <button class="ctn secondary">Learn More</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-gas-pump"></i>
+                    <h3>Premium Fuel</h3>
+                    <p>High-quality gasoline for optimal engine performance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Bulk Delivery</h3>
+                    <p>Efficient fuel delivery services for businesses</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Eco-Friendly</h3>
+                    <p>Committed to environmental sustainability</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Stations Nationwide</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1M+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Join Our Network</h2>
+            <p>Become a part of Uganda's leading gasoline distribution network</p>
+            <button class="ctn">Learn More</button>
+        </section>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Pearl Gasoline Industry is Uganda's leading fuel distributor, committed to quality service and environmental sustainability.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="statistic.html">Statistics</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
+                    <li><i class="fas fa-phone"></i> +256 XXX XXX XXX</li>
+                    <li><i class="fas fa-envelope"></i> info@pearlgasoline.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pearl Gasoline Industry. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <span>Designed by GROUP X BBC</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(27, 61, 109, 0.98)';
+            navbar.style.padding = '0.5rem 5%';
+        } else {
+            navbar.style.background = 'rgba(27, 61, 109, 0.95)';
+            navbar.style.padding = '1rem 5%';
+        }
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.createElement('button');
+    menuBtn.className = 'menu-toggle';
+    menuBtn.innerHTML = '☰';
+    document.querySelector('.menu').prepend(menuBtn);
+
+    menuBtn.addEventListener('click', () => {
+        document.querySelector('.menu').classList.toggle('active');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+</script>
+</html>
