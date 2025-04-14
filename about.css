@@ -31,7 +31,7 @@ body {
     min-height: 50vh;
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(gasindustry.jpg);
+                url(./images/gasindustry.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
