@@ -23,7 +23,7 @@ html, body {
 
 .main {
   width: 100%;
-  background-color: aliceblue;
+  background-color:var(--light-gray)
 }
 
 /* Navbar Styles */
